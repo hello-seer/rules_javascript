@@ -663,14 +663,14 @@ PACKAGES = {
             },
         ],
         "extra_deps": {
-            "@babel/helper-compilation-targets@7.18.9-083609f8": [
-                {
-                    "id": "@babel/core@7.18.13",
-                },
-            ],
             "@babel/core@7.18.13": [
                 {
                     "id": "@babel/helper-compilation-targets@7.18.9-083609f8",
+                },
+            ],
+            "@babel/helper-compilation-targets@7.18.9-083609f8": [
+                {
+                    "id": "@babel/core@7.18.13",
                 },
             ],
         },
@@ -870,14 +870,14 @@ PACKAGES = {
             },
         ],
         "extra_deps": {
-            "@babel/helper-compilation-targets@7.18.9-083609f8": [
-                {
-                    "id": "@babel/core@7.18.13",
-                },
-            ],
             "@babel/core@7.18.13": [
                 {
                     "id": "@babel/helper-compilation-targets@7.18.9-083609f8",
+                },
+            ],
+            "@babel/helper-compilation-targets@7.18.9-083609f8": [
+                {
+                    "id": "@babel/core@7.18.13",
                 },
             ],
         },

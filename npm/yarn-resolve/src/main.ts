@@ -44,7 +44,7 @@ const YARN_BIN = path.join(RUNFILES_DIR, "better_rules_javascript/npm/yarn");
   const cachePath = path.join(args.dir, ".bazel-npm-cache.json");
   let cacheContent: string | undefined;
   try {
-    cacheContent = fs.readFileSync(cachePath, "utf-8");
+    cacheContent = await fs.promises.readFile(cachePath, "utf-8");
   } catch (e) {}
   if (
     cacheContent !== undefined &&
@@ -82,7 +82,7 @@ const YARN_BIN = path.join(RUNFILES_DIR, "better_rules_javascript/npm/yarn");
 
   // output
   const starlarkFile = toStarlarkFile(bzlPackages, bzlRoots);
-  fs.writeFileSync(args.output, printStarlark(starlarkFile));
+  await fs.promises.writeFile(args.output, printStarlark(starlarkFile));
   console.error(`Created ${bzlPackages.size} packages`);
 })().catch((e) => {
   console.error(e);
